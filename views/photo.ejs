@@ -38,10 +38,14 @@
                                 <!-- share box -->
                                 <div class="tm-bg-gray tm-share-box">
                                     <div class="text-center">
-                                        <button class="btn btn-primary p-0 mb-4 tm-btn tm-btn-animate tm-btn-download  tm-icon-download "> buton 1</button>
+                                        <a href="/photos/edit/<%- photo._id %>" class="btn btn-primary p-0 mb-4 tm-btn tm-btn-animate tm-btn-download  tm-icon-download "> Update</a>
                                     </div>
                                     <div class="text-center">
-                                        <button class="btn btn-danger p-0 mb-4 tm-btn tm-btn-animate tm-btn-download  tm-icon-download"> buton 2</button>
+                                        <!-- DELETE linkine tıklanıldığında /photos/<%- photo._id %> bu adrese delete isteğinde bulunmuş oluyoruz. -->
+                                        <!-- bazı tarayıcılar put ve delete ti anlayamadığı için get'i delete gib sümüle ettik -->
+                                        <!-- //methodOverride: put requesti post request şeklinde smüle edeceğiz -->
+                                        <a href="/photos/<%- photo._id %>?_method=DELETE" class="btn btn-danger p-0 mb-4 tm-btn tm-btn-animate tm-btn-download  tm-icon-download"
+                                            onclick="return confirm('ARE YOU SURE?')">Delete</a>
                                     </div>
                                 </div>
                             </div>
