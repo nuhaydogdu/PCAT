@@ -4,19 +4,15 @@
 
 Image upload website that I coded using Node.js/Express.
 
-# Technologies I use:
+## Technologies I use:
 
-Node js
+- Node js
+- MongoDB
+- ejs template
+- multer
+- method override
 
-MongoDB
-
-ejs template
-
-multer
-
-method-override
-
-# What I learned:
+## What I learned:
 
 Creating Schema and Model using MongoDB
 
@@ -30,7 +26,7 @@ Coding the project according to MVC structure.
 
 Pagination with MongoDB.
 
-# To Run the Project:
+## To Run the Project:
 
 https://github.com/nuhaydogdu/PCAT.git
 
